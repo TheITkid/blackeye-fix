@@ -23,7 +23,7 @@ read token
 sleep 0.2
 echo "
 										"
-ngrok authtoken $token
+./ngrok authtoken $token
 sleep 0.2
 echo "
 
@@ -40,7 +40,7 @@ read -rsn1 input
 if [ "$input" = "Y" ];then
 cd /$FINDUSER/Downloads
 sleep 0.2
-ngrok http 3333
+./ngrok http 3333
 fi
 done
 else                                                                                                                              
@@ -57,7 +57,7 @@ sleep 0.2
 echo "
 
 										"
-ngrok authtoken $token
+./ngrok authtoken $token
 sleep 0.2
 echo "
 
@@ -74,7 +74,7 @@ read -rsn1 input
 if [ "$input" = "Y" ];then
 cd /home/$FINDUSER/Downloads
 sleep 0.2
-ngrok http 3333
+./ngrok http 3333
 fi
 done
 fi																											
